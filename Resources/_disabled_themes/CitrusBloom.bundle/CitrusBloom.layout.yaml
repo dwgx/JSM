@@ -1,0 +1,4 @@
+home:
+  type: stack
+  direction: vertical
+  children: []

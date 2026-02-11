@@ -1,0 +1,15 @@
+button:
+  background: primary
+  text: text
+  hover: primary
+  active: primary
+  animation: fast
+card:
+  background: panel
+  text: text
+  hover: primary
+  active: primary
+  animation: slow
+console:
+  background: panel
+  text: text

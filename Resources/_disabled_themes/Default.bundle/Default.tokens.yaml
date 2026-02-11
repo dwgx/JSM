@@ -1,0 +1,27 @@
+colors:
+  surface: "#101418"
+  panel: "#171C22"
+  primary: "#5EE0F0"
+  text: "#E6EEF5"
+  textMuted: "#9AA7B5"
+  border: "#222A33"
+  shadow: "#66000000"
+  accent: "#7C5CFF"
+  success: "#43D17A"
+  warning: "#FFB75E"
+  danger: "#FF6A6A"
+  hover: "#1E2530"
+fonts:
+  body: "Menlo 13"
+  title: "SF Pro Rounded 20"
+spacing:
+  small: 8
+  medium: 16
+  large: 24
+radius:
+  small: 6
+  medium: 10
+  large: 16
+animations:
+  fast: "easeInOut 0.2s"
+  slow: "easeInOut 0.6s"

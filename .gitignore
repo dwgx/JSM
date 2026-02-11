@@ -1,0 +1,10 @@
+DerivedData/
+.DS_Store
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+
+# SwiftPM / build outputs
+.build/
+

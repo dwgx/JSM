@@ -1,0 +1,4 @@
+name: AppleLiquid
+version: "1.0.0"
+author: JSM
+entry: web/console.html

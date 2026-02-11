@@ -1,0 +1,4 @@
+name: JSM Default
+version: "0.1.0"
+author: Codex
+entry: web/console.html

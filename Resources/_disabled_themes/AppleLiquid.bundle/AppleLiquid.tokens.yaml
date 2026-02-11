@@ -1,0 +1,27 @@
+colors:
+  surface: "#F4F6F8"
+  panel: "#FFFFFF"
+  primary: "#3FA9F5"
+  text: "#1B1F24"
+  textMuted: "#606A74"
+  border: "#E3E7EE"
+  shadow: "#14000000"
+  accent: "#6C8BFF"
+  success: "#2DBD72"
+  warning: "#FFB347"
+  danger: "#FF5A5F"
+  hover: "#EEF2F7"
+fonts:
+  body: "SF Pro Text 13"
+  title: "SF Pro Rounded 20"
+spacing:
+  small: 8
+  medium: 16
+  large: 24
+radius:
+  small: 8
+  medium: 12
+  large: 18
+animations:
+  fast: "easeInOut 0.18s"
+  slow: "easeInOut 0.45s"
