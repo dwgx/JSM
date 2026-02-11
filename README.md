@@ -27,6 +27,20 @@ xcodebuild -project /Users/dwgx/Documents/Project/JSM/JSM.xcodeproj \
   -destination 'platform=macOS' build
 ```
 
+## Build Installer DMG
+
+```bash
+xcodebuild -project /Users/dwgx/Documents/Project/JSM/JSM.xcodeproj \
+  -scheme JSM \
+  -configuration Release \
+  -destination 'platform=macOS' \
+  -derivedDataPath /tmp/JSMRelease build
+
+/Users/dwgx/Documents/Project/JSM/scripts/build_installer_dmg.sh \
+  -a /tmp/JSMRelease/Build/Products/Release/JSM.app \
+  -o /Users/dwgx/Desktop/JSM-Installer.dmg
+```
+
 ## Run in Xcode
 
 1. Open `/Users/dwgx/Documents/Project/JSM/JSM.xcodeproj`
@@ -43,4 +57,3 @@ xcodebuild -project /Users/dwgx/Documents/Project/JSM/JSM.xcodeproj \
 ## License
 
 This project is licensed under the MIT License. See `LICENSE`.
-
