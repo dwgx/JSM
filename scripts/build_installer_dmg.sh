@@ -114,6 +114,6 @@ fi
 
 sync
 hdiutil detach "$DEVICE" -quiet || hdiutil detach "$MOUNT_POINT" -force -quiet
-hdiutil convert "$RW_DMG" -format UDZO -imagekey zlib-level=9 -o "$OUT_DMG" -quiet
+hdiutil convert "$RW_DMG" -format UDZO -imagekey zlib-level=9 -ov -o "$OUT_DMG" -quiet
 
 echo "Created installer DMG: $OUT_DMG"
