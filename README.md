@@ -1,24 +1,38 @@
 # JSM
 
-JSM is a native macOS app for managing Java servers (for example Paper/Spigot) with built-in console, runtime metrics, YAML config editing, and theme customization.
+JSM 是一个原生 macOS Java 服务器管理工具（如 Paper/Spigot），提供控制台、运行监控、配置导入导出和主题系统。
 
-## Features
+## 主要功能
 
-- Multi-server management: create/import/edit/start/stop/restart/force-stop servers
-- Native and Web console renderers
-- Real-time server metrics: CPU, RAM, thread count, file descriptors
-- YAML-based server config import/export and bundle export
-- Theme engine with live preview and version history
-- Java runtime detection, authorization, and diagnostics for sandbox environments
+- 多服务器管理：新建、导入、编辑、启动、停止、重启、强制结束
+- 原生控制台与 Web 控制台双渲染
+- 实时指标：CPU、内存、线程、文件描述符
+- YAML 配置导入导出、整包导出
+- 主题实时预览、保存和重置
+- Java 运行时检测与诊断
 
-## Requirements
+## 环境要求
 
 - macOS
-- Xcode 16+
-- Swift 5
-- Java 17+ (Java 21 recommended for modern Paper builds)
+- Java 17+（推荐 Java 21）
+- 开发环境需 Xcode 16+
 
-## Build
+## 普通用户使用（默认）
+
+1. 在 Release 页面下载 `JSM-v*-Installer.dmg`
+2. 打开 DMG，把 `JSM.app` 拖到 `Applications`
+3. 从“应用程序”启动 JSM
+4. 在“服务器”页导入你的服务器目录，或新建服务器
+5. 在“Java Options”里只填 JVM 参数，不要填 `java -jar ...`
+
+## 首次打开提示“无法验证”处理
+
+当前公开包如果未做 Apple 公证，macOS 可能显示“无法验证开发者”。可用以下方式打开：
+
+1. 在 Finder 中右键 `JSM.app` -> “打开”
+2. 系统弹窗中再次点“打开”
+
+## 开发构建
 
 ```bash
 xcodebuild -project /Users/dwgx/Documents/Project/JSM/JSM.xcodeproj \
@@ -27,7 +41,7 @@ xcodebuild -project /Users/dwgx/Documents/Project/JSM/JSM.xcodeproj \
   -destination 'platform=macOS' build
 ```
 
-## Build Installer DMG
+## 生成安装 DMG
 
 ```bash
 xcodebuild -project /Users/dwgx/Documents/Project/JSM/JSM.xcodeproj \
@@ -41,19 +55,13 @@ xcodebuild -project /Users/dwgx/Documents/Project/JSM/JSM.xcodeproj \
   -o /Users/dwgx/Desktop/JSM-Installer.dmg
 ```
 
-## Run in Xcode
+## 项目结构
 
-1. Open `/Users/dwgx/Documents/Project/JSM/JSM.xcodeproj`
-2. Select scheme `JSM`
-3. Run (`Cmd + R`)
-
-## Project Layout
-
-- `/Users/dwgx/Documents/Project/JSM/JSM/Core` core logic (app store, process, metrics, config, theme)
-- `/Users/dwgx/Documents/Project/JSM/JSM/UI` pages/components/windows
-- `/Users/dwgx/Documents/Project/JSM/JSM/System` sandbox/security helpers
-- `/Users/dwgx/Documents/Project/JSM/JSM/Resources` built-in themes
+- `/Users/dwgx/Documents/Project/JSM/JSM/Core`：核心逻辑（进程、配置、指标、主题）
+- `/Users/dwgx/Documents/Project/JSM/JSM/UI`：界面页面与组件
+- `/Users/dwgx/Documents/Project/JSM/JSM/System`：系统权限与安全辅助
+- `/Users/dwgx/Documents/Project/JSM/JSM/Resources`：内置主题与资源
 
 ## License
 
-This project is licensed under the MIT License. See `LICENSE`.
+MIT，详见 `LICENSE`。
