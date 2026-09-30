@@ -4,9 +4,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner.svg?t=2d0917454d8f" />
-  <source media="(prefers-color-scheme: light)" srcset="docs/assets/banner-light.svg?t=2d0917454d8f" />
-  <img src="docs/assets/banner.svg?t=2d0917454d8f" width="100%" alt="JSM — Swift 编写的 macOS Java / Paper / Spigot 服务器管理器" />
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner.svg?t=fcedd6628acc" />
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/banner-light.svg?t=fcedd6628acc" />
+  <img src="docs/assets/banner.svg?t=fcedd6628acc" width="100%" alt="JSM — Swift 编写的 macOS Java / Paper / Spigot 服务器管理器" />
 </picture>
 
 <br/>
