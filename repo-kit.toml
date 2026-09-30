@@ -1,0 +1,14 @@
+# repo-kit · 本仓库的 banner 规格
+# 改这个文件，workflow 会重新渲染 docs/assets/banner*.svg 与 README 区块
+# 生成器：https://github.com/dwgx/DWGX/tree/main/repo-kit
+owner = "dwgx"
+
+[[repo]]
+name = "JSM"
+style = "post"
+tagline = "Swift 编写的 macOS Java / Paper / Spigot 服务器管理器"
+install = "xcodebuild -project JSM.xcodeproj -scheme JSM -configuration Debug build"
+lang = "Swift"
+license = "MIT"
+topics = ["desktop-app", "java-server-manager", "macos"]
+links = [{ label = "releases", url = "https://github.com/dwgx/JSM/releases" }]
